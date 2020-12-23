@@ -15,7 +15,7 @@
     Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
     Contacto:   https://parzibyte.me/blog/contacto/
 */
-const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
+const MAXIMOS_INTENTOS = 40, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
     NOMBRE_IMAGEN_OCULTA = "./img/question.png"; // La imagen que se muestra cuando la real está oculta
@@ -24,12 +24,46 @@ new Vue({
     data: () => ({
         // La ruta de las imágenes. Puede ser relativa o absoluta
         imagenes: [
-            "./img/cabra.jpg",
-            "./img/conejo.jpg",
-            "./img/leon.jpg",
-            "./img/oveja.jpg",
-            "./img/perro.jpg",
-            "./img/gato.jpg",
+            "./img/C1.1.PNG",
+            "./img/C1.2.PNG",
+            "./img/C2.1.PNG",
+            "./img/C2.2.PNG",
+            "./img/C3.1.PNG",
+            "./img/C3.1.PNG",
+            "./img/C4.1.PNG",
+            "./img/C4.2.PNG",
+            "./img/C5.1.PNG",
+            "./img/C5.2.PNG",
+            "./img/C6.1.PNG",
+            "./img/C6.2.PNG",
+            "./img/C7.1.PNG",
+            "./img/C7.2.PNG",
+            "./img/C8.1.PNG",
+            "./img/C8.2.PNG",
+            "./img/C9.1.PNG",
+            "./img/C9.2.PNG",
+            "./img/C10.1.PNG",
+            "./img/C10.2.PNG",
+            "./img/C11.1.PNG",
+            "./img/C11.2.PNG",
+            "./img/C12.1.PNG",
+            "./img/C12.2.PNG",
+            "./img/C13.1.PNG",
+            "./img/C13.2.PNG",
+            "./img/C14.1.PNG",
+            "./img/C14.2.PNG",
+            "./img/C15.1.PNG",
+            "./img/C15.2.PNG",
+            "./img/C16.1.PNG",
+            "./img/C16.2.PNG",
+            "./img/C17.1.PNG",
+            "./img/C17.2.PNG",
+            "./img/C18.1.PNG",
+            "./img/C18.2.PNG",
+            "./img/C19.1.PNG",
+            "./img/C19.2.PNG",
+            "./img/C20.1.PNG",
+            "./img/C20.2.PNG",
         ],cartas:[
             "./img/corazonazul.jpg",
             "./img/corazonverde.jpg",
@@ -56,7 +90,7 @@ new Vue({
                 html: `
                 
                 <div>
-                //aqui
+                The player chooses two cards, if these are cards they are complementary, that is, they belong to the same sentence, they get a point and the cards remain face up; If the two cards he chose are different, he places them face down again and loses an attempt, the game ends when he finds all the pairs or runs out of attempts
                 </div>
                 `,
                 confirmButtonText: "Cerrar",
@@ -180,7 +214,7 @@ new Vue({
         reiniciarJuego() {
             
            let wenas= ["./img/corazonazul.jpg"];
-            let arreglo= [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20];
+            let arreglo= [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21];
             let memorama = [];
             this.imagenes.forEach((imagen, indice) => {
                 
